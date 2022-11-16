@@ -1,0 +1,67 @@
+{%- if section.settings.show_announcement_bar -%}
+  {% style %}
+    .announcement-bar {
+      color: {{ section.settings.announcement_bar_text_color }};
+      background-color: {{ section.settings.announcement_bar_bg }};
+    }
+    .announcement-bar a {
+      color: {{ section.settings.announcement_bar_text_color }};
+      text-decoration: none;
+    }
+    .announcement-bar--has-link:hover {
+      background-color: {{ section.settings.announcement_bar_bg | color_darken: 10 }};
+    }
+  {% endstyle %}
+  <div class="announcement-bar{% if section.settings.announcement_bar_url != blank %} announcement-bar--has-link{% endif %}">
+    {%- if section.settings.announcement_bar_url != blank -%}
+      <a href="{{ section.settings.announcement_bar_url }}">
+    {%- endif -%}
+      <div class="page-width">
+        <div class="container">
+          <div class="announcement-bar__content">
+            {{ section.settings.announcement_bar_text }}
+          </div>
+        </div>
+      </div>
+    {%- if section.settings.announcement_bar_url != blank -%}
+      </a>
+    {%- endif -%}
+  </div>
+{%- endif -%}
+
+{% schema %}
+  {
+    "name": "Announcement bar",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "show_announcement_bar",
+        "label": "Show announcement",
+        "default": false
+      },
+      {
+        "type": "text",
+        "id": "announcement_bar_text",
+        "label": "Text",
+        "default": "Add notices for your shoppers here"
+      },
+      {
+        "type": "url",
+        "id": "announcement_bar_url",
+        "label": "Link"
+      },
+      {
+        "type": "color",
+        "id": "announcement_bar_bg",
+        "label": "Background color",
+        "default": "#484848"
+      },
+      {
+        "type": "color",
+        "id": "announcement_bar_text_color",
+        "label": "Text color",
+        "default": "#ffffff"
+      }
+    ]
+  }
+{% endschema %}

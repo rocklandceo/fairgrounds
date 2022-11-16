@@ -1,0 +1,1 @@
+{"sections":{"main":{"type":"main-page-contact","blocks":{"name":{"type":"name_input","settings":{}},"email":{"type":"email_input","settings":{}},"message":{"type":"message_input","settings":{}}},"block_order":["name","email","message"],"settings":{}}},"order":["main"]}

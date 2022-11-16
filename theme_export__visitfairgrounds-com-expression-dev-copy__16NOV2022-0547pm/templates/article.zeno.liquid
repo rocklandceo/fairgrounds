@@ -1,0 +1,10 @@
+
+        <div class="zn-content boxed">
+          {% assign articleKey = 'zeno-article-' | append: article.id %}
+          <link rel="stylesheet" href="{{ articleKey | append: '.css' | asset_url }}">
+          {% assign oriArticle = article %} 
+          {% include articleKey %}
+          {% assign article = oriArticle %}
+          <script src="{{ articleKey | append: '.js' | asset_url }}"></script>
+        </div>
+      

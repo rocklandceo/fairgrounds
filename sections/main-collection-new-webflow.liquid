@@ -88,7 +88,7 @@
       <div class="cc-filters-results">
         <div class="grid grid--uniform product-grid">
           {%- for product in collection.products -%}
-            {% render 'product-block', product: product, grid_class: grid_class, aspect_ratio: aspect_ratio %}
+            {% render 'product-block-new', product: product, grid_class: grid_class, aspect_ratio: aspect_ratio %}
           {%- else -%}
             {%- if collection.handle == 'all' and collection.all_vendors.size == 0 and collection.all_types.size == 0 -%}
               {%- for i in (1..8) -%}

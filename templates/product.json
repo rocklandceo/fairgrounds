@@ -1,1 +1,28 @@
-{"sections":{"main":{"type":"main-product","blocks":{"title":{"type":"title","settings":{}},"vendor-and-type":{"type":"vendor-and-type","settings":{}},"price":{"type":"price","settings":{}},"variant-picker":{"type":"variant-picker","settings":{}},"buy-buttons":{"type":"buy-buttons","settings":{}},"description":{"type":"description","settings":{}},"share":{"type":"share","settings":{}}},"block_order":["title","vendor-and-type","price","variant-picker","buy-buttons","description","share"],"settings":{}},"recommendations":{"type":"product-recommendations","settings":{}}},"order":["main","recommendations"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": { "type": "title", "settings": {} },
+        "vendor-and-type": { "type": "vendor-and-type", "settings": {} },
+        "price": { "type": "price", "settings": {} },
+        "variant-picker": { "type": "variant-picker", "settings": {} },
+        "buy-buttons": { "type": "buy-buttons", "settings": {} },
+        "description": { "type": "description", "settings": {} },
+        "share": { "type": "share", "settings": {} }
+      },
+      "block_order": [
+        "title",
+        "vendor-and-type",
+        "price",
+        "variant-picker",
+        "buy-buttons",
+        "description",
+        "share"
+      ],
+      "settings": {}
+    },
+    "recommendations": { "type": "product-recommendations", "settings": {} }
+  },
+  "order": ["main", "recommendations"]
+}

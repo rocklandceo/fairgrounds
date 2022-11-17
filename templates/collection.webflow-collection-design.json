@@ -20,7 +20,7 @@
       "type": "featured-collection-new",
       "settings": {
         "title": "Featured collection",
-        "collection": "",
+        "collection": "all-products",
         "show_vendor": false,
         "enable_carousel": false,
         "column_count": 3,

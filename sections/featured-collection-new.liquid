@@ -44,7 +44,7 @@
     <div class="grid grid--uniform product-grid {% if section.settings.enable_carousel %}product-grid--carousel{% else %}product-grid--rows{% endif %}">
       {% unless section.settings.enable_carousel %}
         {% for product in collection.products limit: product_limit %}
-          {% render 'product-block',
+          {% render 'product-block-new',
             product: product,
             grid_class: grid_class,
             aspect_ratio: aspect_ratio,

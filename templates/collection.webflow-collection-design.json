@@ -2,9 +2,10 @@
   "sections": {
     "main": {
       "type": "main-collection-new-webflow",
+      "disabled": true,
       "settings": {
         "show_vendor": false,
-        "column_count": 3,
+        "column_count": 4,
         "pagination_limit": 16,
         "crop": "middle",
         "title_position": "top",
@@ -14,9 +15,21 @@
         "show_sort_by": true,
         "show_featured": false
       }
+    },
+    "49df3557-ba1a-4462-ba42-d72b6c97ad7f": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured collection",
+        "collection": "",
+        "show_vendor": false,
+        "enable_carousel": false,
+        "column_count": 3,
+        "row_count": 1
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "49df3557-ba1a-4462-ba42-d72b6c97ad7f"
   ]
 }

@@ -16,8 +16,8 @@
         "show_featured": false
       }
     },
-    "49df3557-ba1a-4462-ba42-d72b6c97ad7f": {
-      "type": "featured-collection",
+    "b9719ea1-1c48-4ac1-8b2c-752e537a0f5d": {
+      "type": "featured-collection-new",
       "settings": {
         "title": "Featured collection",
         "collection": "",
@@ -30,6 +30,6 @@
   },
   "order": [
     "main",
-    "49df3557-ba1a-4462-ba42-d72b6c97ad7f"
+    "b9719ea1-1c48-4ac1-8b2c-752e537a0f5d"
   ]
 }

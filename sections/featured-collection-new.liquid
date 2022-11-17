@@ -35,21 +35,6 @@
 -%}
 
 <div class="row-double-space featured-collection" data-section-id="{{ section.id }}" data-section-type="featured-collection">
-  {%- if section.settings.title != blank -%}
-    <div class="section-heading">
-      <div class="three-quarters">
-        <h2 class="section-heading__title standard-title"><a href="{{ collection.url }}">
-          {{- section.settings.title | escape -}}</a>
-        </h2>
-      </div>
-      <div class="text-right heading-link">
-        <a class="link-reset text-with-chevron" href="{{ collection.url }}">
-          {{ 'collections.general.see_all' | t }}
-          <span class="feather-icon">{% render 'feather-chevron-right' %}</span>
-        </a>
-      </div>
-    </div>
-  {%- endif -%}
 
   <div class="{% if section.settings.enable_carousel %}carousel-mobile-off-edge {% endif %}relative">
     {% if section.settings.enable_carousel %}

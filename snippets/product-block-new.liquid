@@ -7,7 +7,7 @@
   assign cheapest_variant = product.variants | sort: 'price' | first
 -%}
 
-<div class="product-block grid__item grid__item-padding {{ grid_class | default: 'one-quarter small-down--one-half' }}">
+<div class="product-block grid__item {{ grid_class | default: 'one-quarter small-down--one-half' }}">
   <a class="product-block__link" href="{{ product.url | within: collection }}">
 
     {% if product.featured_media != blank %}
